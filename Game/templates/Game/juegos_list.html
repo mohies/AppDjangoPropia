@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página de Ejemplo</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a mi página de ejemplo</h1>
+        <nav>
+            <a href="nivel">Niveles</a> 
+            <a href="personaje">personajes</a> 
+        </nav>
+    </header>
+
+
+    {%for j in juegos_mostrar %}  
+    
+        <article>
+            <h1>Titulo Juego: {{j.titulo}}</h1>
+            <h2>Desarrollador : {{j.desarrollador}}
+            <h2>{{j.resena}}</h2>
+            <time>publicado: {{j.fecha_lanzamiento}}
+        </article>
+    {% endfor %}
+
+   
+
+    <main>
+        <p>Este es un párrafo de ejemplo en mi primera página HTML.</p>
+        <p>Puedes aprender más sobre HTML en <a href="https://www.w3schools.com/html/">W3Schools</a>.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mi Página de Ejemplo</p>
+    </footer>
+</body>
+</html>
+
+
+
