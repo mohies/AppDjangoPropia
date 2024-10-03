@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIVELES</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="juego">JUEGOS</a> 
+            <a href="personaje">PERSONAJES</a> 
+        </nav>
+    </header>
+
+
+
+    {%for n in niveles_mostrar %}  
+    <h1>NIVELES</h2>
+        <article>
+            <h2>Titulo Juego: {{n.juego.titulo}}</h2>
+            <h2>Nombre de la mision : {{n.nombre}}</h2>
+            <h2>Dificultad : {{n.dificultad}}</h2>
+            <time>fecha : {{n.fecha_creacion}}</time>
+        </article>
+    {% endfor %}
+
+   
+
+    <main>
+        <p>Este es un párrafo de ejemplo en mi primera página HTML.</p>
+        <p>Puedes aprender más sobre HTML en <a href="https://www.w3schools.com/html/">W3Schools</a>.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mi Página de Ejemplo</p>
+    </footer>
+</body>
+</html>
+
+
+
